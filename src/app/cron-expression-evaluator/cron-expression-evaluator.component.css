@@ -1,0 +1,71 @@
+.cron-evaluator {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cron-input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cron-input {
+  margin-bottom: 25px;
+}
+
+.cron-input label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.cron-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.cron-input input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.parsed-fields {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.parsed-fields h4 {
+  grid-column: 1 / -1;
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.cron-field {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--secondary-color);
+}
+
+.cron-field.active {
+  background-color: var(--active-color);
+  border-color: var(--primary-color);
+}
+
+.cron-field strong {
+  font-weight: 600;
+}
+
+.cron-field span {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-left: 5px;
+}

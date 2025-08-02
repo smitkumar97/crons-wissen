@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #1890ff;
+  --secondary-color: #f0f2f5;
+  --border-color: #d9d9d9;
+  --text-color: #333;
+  --text-header: #f0f2f5;
+  --active-color: #e6f7ff;
+  --bg-color: #1b1824;
+}
+
+.App {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.App-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 5vh;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: #1b1824;
+}
+
+.App-header h1 {
+  color: #f0f2f5;
+  margin: 6px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1;
+}
+
+.container h2 {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+  margin: 1rem 0;
+}
